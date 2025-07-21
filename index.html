@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="estilo.css" />
   <script src="app.js" defer></script>
 </head>
+<script>
+  // Verifica si el usuario ha iniciado sesión
+  if (!localStorage.getItem('usuario')) {
+    window.location.href = 'login.html';
+  }
+</script>
 
 <body>
   <header class="encabezado">
@@ -21,6 +27,7 @@
       <a href="historia.html">Historia</a>
       <a href="contacto.html">Contacto</a>
       <a href="#carrito">Carrito</a>
+      <a href="#" onclick="cerrarSesion()">Cerrar Sesión</a>
     </nav>
   </header>
 
@@ -143,6 +150,12 @@
     <p>&copy; 2025 Joyas Alejisa. Todos los derechos reservados. Diseñado con 💎 para realzar tu estilo.</p>
     <p>Alexis, Jimena y Salomé</p>
   </footer>
+  <script>
+  function cerrarSesion() {
+    localStorage.removeItem('usuario');
+    window.location.href = 'login.html';
+  }
+</script>
 </body>
 
 </html>
