@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Joyas</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="logo-contenedor">
+      <img src="img/logo_de_alejisa.jpeg" alt="Logo" class="logo" />
+      <h1 class="titulo-tienda">JOYAS ALEJISA</h1>
+    </div>
+    <nav class="menu-principal">
+      <a href="#">Inicio</a>
+      <a href="categorias.html">Categorías</a>
+      <a href="historia.html">Historia</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="img/ale.png" alt="Banner de Joyas de Oro" />
+      <img src="img/descuento.png" alt="Banner Descuento" />
+    </section>
+
+    <section id="categorias" class="contenedor-items">
+      <h3 class="titulo-categoria">Joyería de Oro</h3>
+      <div class="item">
+        <span class="titulo-item">Anillo de Oro Brillante</span>
+        <img src="img/oro1.jpeg" class="img-item" />
+        <span class="precio-item">$300467.000</span>
+        <button onclick="agregarAlCarrito('Anillo de Oro Brillante', 300467.000)">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Cadena de Oro Fino</span>
+        <img src="img/Cadena de Oro Fino.jpeg" class="img-item" />
+        <span class="precio-item">123323.000</span>
+        <button onclick="agregarAlCarrito('Cadena de Oro Fino', 123323.000)">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Pulsera de Oro Rosa</span>
+        <img src="img/Oro rosa.jpeg" class="img-item" />
+        <span class="precio-item">88032.000</span>
+        <button onclick="agregarAlCarrito('Pulsera de Oro Rosa', 88032.000)">Agregar al Carrito</button>
+      </div>
+
+      <h3 class="titulo-categoria">Joyería de Plata</h3>
+      <div class="item">
+        <span class="titulo-item">Anillo Plata Diseño</span>
+        <img src="img/Anillo Plata Diseño.jpeg" class="img-item" />
+        <span class="precio-item">23023.000</span>
+        <button onclick="agregarAlCarrito('Anillo Plata Diseño', 23023.000)">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Collar Corazón Plata</span>
+        <img src="img/Collar Corazón Plata.jpeg" class="img-item" />
+        <span class="precio-item">35032.000</span>
+        <button onclick="agregarAlCarrito('Collar Corazón Plata', 35032.000)">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Aretes de Plata Luna</span>
+        <img src="img/Aretes de Plata Luna.jpeg" class="img-item" />
+        <span class="precio-item">190323.000</span>
+        <button onclick="agregarAlCarrito('Aretes de Plata Luna', 190323.000)">Agregar al Carrito</button>
+      </div>
+
+      <h3 class="titulo-categoria">Joyería de Fantasía</h3>
+      <div class="item">
+        <span class="titulo-item">Pulsera Arcoiris</span>
+        <img src="img/Pulsera Arcoiris.jpeg" class="img-item" />
+        <span class="precio-item">450323.000</span>
+        <button onclick="agregarAlCarrito('Pulsera Arcoiris', 450323.000)">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Aros Brillantes</span>
+        <img src="img/Aros Brillantes.jpeg" class="img-item" />
+        <span class="precio-item">60443.000</span>
+        <button onclick="agregarAlCarrito('Aros Brillantes', 60443.000)">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Collar Estrella</span>
+        <img src="img/Collar Estrella.jpeg" class="img-item" />
+        <span class="precio-item">75444.000</span>
+        <button onclick="agregarAlCarrito('Collar Estrella', 75444.000)">Agregar al Carrito</button>
+      </div>
+    </section>
+
+    <section class="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="contenedor-servicios">
+        <div class="servicio">
+          <img src="https://cdn-icons-png.flaticon.com/512/3144/3144460.png" alt="Envió Gratis" />
+          <h3>Envió Gratis</h3>
+          <p>En compras mayores a $50000</p>
+        </div>
+        <div class="servicio">
+          <img src="https://cdn-icons-png.flaticon.com/512/4299/4299927.png" alt="Pagos en Cuotas" />
+          <h3>Pagos en Cuotas</h3>
+          <p>Hasta 6 cuotas sin interés</p>
+        </div>
+        <div class="servicio">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="Garantía" />
+          <h3>Garantía</h3>
+          <p>Devoluciones hasta 7 días</p>
+        </div>
+        <div class="servicio">
+          <a href="contacto.html" style="text-decoration: none; color: inherit">
+            <img src="https://cdn-icons-png.flaticon.com/512/7269/7269674.png" alt="Contacto" />
+            <h3>Contacto</h3>
+            <p>Escríbenos cuando quieras</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!-- 🛒 CARRITO BONITO -->
+<div id="carrito" style="border: 2px solid #333; padding: 15px; width: 100%; max-width: 500px; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 10px #aaa;">
+  <h2>🛍️ Tu Carrito</h2>
+  <div id="carrito-items"></div>
+  <hr>
+  <p><strong>Total:</strong> S/ <span id="total">0.00</span></p>
+  <button onclick="vaciarCarrito()">🗑 Vaciar</button>
+  <button onclick="pagarCarrito()">💳 Pagar</button>
+</div>
+
+<!-- 🧾 BOLETA (visible después de pagar) -->
+<div id="boleta" style="display: none; margin: 30px auto; width: 100%; max-width: 600px; border: 1px solid #444; padding: 20px; border-radius: 10px; background: #f8f8f8;">
+  <h2>🧾 Boleta de Compra</h2>
+  <div id="boleta-detalle"></div>
+  <p><strong>Total a pagar:</strong> S/ <span id="boleta-total"></span></p>
+  <p><em>Su pedido llegará dentro de 10 días hábiles.</em></p>
+  <button onclick="descargarBoletaWord()">📥 Descargar Boleta en Word</button>
+</div>
+  <footer>
+    <p>&copy; 2025 Joyas Alejisa. Todos los derechos reservados. Diseñado con 💎 para realzar tu estilo.</p>
+    <p>Alexis, Jimena y Salomé</p>
+  </footer>
+</body>
+
+</html>
+

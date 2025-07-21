@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente y color base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 0;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #b89d65;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.titulo-tienda {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Menú */
+.menu-principal {
+    margin-top: 15px;
+}
+
+.menu-principal a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-principal a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #a77c30;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+/* Fundadores */
+.fundadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.persona {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 250px;
+}
+
+/* FOTO FUNDADOR CIRCULAR CON MARCO ELEGANTE */
+.foto-fundador {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d4af37; /* marco dorado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.foto-fundador:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.persona h3 {
+    margin: 10px 0 5px;
+    color: #444;
+}
+
+/* Lista de valores */
+.seccion-mision-vision ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Mapa */
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #b89d65;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
