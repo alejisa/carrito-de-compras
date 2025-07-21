@@ -2,11 +2,115 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Iniciar Sesión</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión - Joyas Alejisa</title>
   <link rel="stylesheet" href="login.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    /* VIDEO DE FONDO */
+    video#bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .login-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 60%;
+      max-width: 500px;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 40px 30px;
+      transform: translate(-50%, -50%);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #c4a35a;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #c4a35a;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #a88c3b;
+    }
+
+    .login-container p {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .login-container a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Video de fondo local -->
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/videoplayback (3).mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <!-- Formulario de login -->
   <div class="login-container">
+    <!-- Imagen dentro del cuadro -->
+    <img src="img/p.jpg" alt="Usuario" />
+
     <h2>Iniciar Sesión</h2>
     <form id="loginForm">
       <input type="text" id="usuario" placeholder="Usuario" required />
@@ -32,5 +136,6 @@
       }
     });
   </script>
+
 </body>
 </html>
